@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours Lucachi | Agencia de Turismo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de FontAwesome para WhatsApp y detalles visuales -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="logo">Tours<span>Lucachi</span></div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#paquetes">Paquetes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) con efecto de texto -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Descubre <span id="efecto-texto" class="texto-destacado"></span></h1>
+            <p>Aventuras inolvidables, paisajes únicos y experiencias diseñadas a tu medida.</p>
+            <a href="#paquetes" class="btn-principal">Ver Paquetes Disponibles</a>
+        </div>
+    </section>
+
+    <!-- Catálogo de Paquetes Turísticos -->
+    <section id="paquetes" class="contenedor-paquetes">
+        <h2>Nuestros Paquetes Destacados</h2>
+        <p class="subtitulo">Elige tu próximo destino, selecciona una fecha y reserva al instante.</p>
+
+        <div class="grid-paquetes" id="lista-paquetes">
+            <!-- Los paquetes se cargan dinámicamente desde JavaScript -->
+        </div>
+    </section>
+
+    <!-- Modal de Reserva -->
+    <div id="modal-reserva" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <h3>Confirmar Reserva</h3>
+            <p id="modal-titulo-paquete" class="paquete-seleccionado"></p>
+
+            <form id="form-reserva">
+                <div class="campo">
+                    <label for="nombre-cliente">Tu Nombre Completo:</label>
+                    <input type="text" id="nombre-cliente" required placeholder="Ej. Carlos Mendoza">
+                </div>
+
+                <div class="campo">
+                    <label for="fecha-viaje">Selecciona la Fecha Disponible:</label>
+                    <select id="fecha-viaje" required></select>
+                </div>
+
+                <div class="campo">
+                    <label for="cantidad-personas">Cantidad de Personas:</label>
+                    <input type="number" id="cantidad-personas" min="1" max="15" value="1" required>
+                </div>
+
+                <div class="resumen-precio">
+                    <span>Total a pagar:</span>
+                    <strong id="precio-total">$0 USD</strong>
+                </div>
+
+                <button type="submit" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Confirmar por WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <p>&copy; 2026 Explora Mundo Agencia de Turismo. Todos los derechos reservados.</p>
+        <p>Atención directa al cliente vía WhatsApp las 24 horas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
