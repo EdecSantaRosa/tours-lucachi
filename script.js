@@ -1,6 +1,6 @@
 // CONFIGURACIÓN DE WHATSAPP DE LA AGENCIA
 // Reemplaza este número con el tuyo (código de país + número, sin el símbolo +)
-const TELEFONO_AGENCIA = "59170000000"; 
+const TELEFONO_AGENCIA = "59176984810"; 
 
 // BASE DE DATOS DE PAQUETES TURÍSTICOS
 const paquetes = [
