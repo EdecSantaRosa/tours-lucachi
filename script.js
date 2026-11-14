@@ -1,6 +1,6 @@
 // CONFIGURACIÓN DE WHATSAPP DE LA AGENCIA
 // Reemplaza este número con el tuyo (código de país + número, sin el símbolo +)
-const TELEFONO_AGENCIA = "59176984810"; 
+//const TELEFONO_AGENCIA = "59176984810"; 
 
 // BASE DE DATOS DE PAQUETES TURÍSTICOS
 const paquetes = [
@@ -169,7 +169,7 @@ formReserva.addEventListener("submit", function(e) {
                     `*Total estimado:* $${total} USD%0A%0A` +
                     `¿Me confirman disponibilidad por favor?`;
 
-    const urlWhatsApp = `https://wa.me/{TELEFONO_AGENCIA}?text=${mensaje}`;
+    const urlWhatsApp = `https://wa.me/59176984810?text=${mensaje}`;
     window.open(urlWhatsApp, "_blank");
     modal.style.display = "none";
 });
