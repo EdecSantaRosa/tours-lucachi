@@ -169,7 +169,7 @@ formReserva.addEventListener("submit", function(e) {
                     `*Total estimado:* $${total} USD%0A%0A` +
                     `¿Me confirman disponibilidad por favor?`;
 
-    const urlWhatsApp = `https://wa.me{TELEFONO_AGENCIA}?text=${mensaje}`;
+    const urlWhatsApp = `https://wa.me/{TELEFONO_AGENCIA}?text=${mensaje}`;
     window.open(urlWhatsApp, "_blank");
     modal.style.display = "none";
 });
