@@ -161,7 +161,7 @@ formReserva.addEventListener("submit", function(e) {
     const personas = inputPersonas.value;
     const total = paqueteActual.precio * personas;
 
-    const mensaje = `Hola *Explora Mundo*, quiero confirmar una reserva:%0A%0A` +
+    const mensaje = `Hola *Tours Lucachi*, quiero confirmar una reserva:%0A%0A` +
                     `*Paquete:* ${paqueteActual.titulo}%0A` +
                     `*Cliente:* ${nombre}%0A` +
                     `*Fecha elegida:* ${fecha}%0A` +
