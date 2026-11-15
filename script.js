@@ -1,6 +1,7 @@
 // CONFIGURACIÓN DE WHATSAPP DE LA AGENCIA
 // Reemplaza este número con el tuyo (código de país + número, sin el símbolo +)
-//const TELEFONO_AGENCIA = "59176984810"; 
+//const TELEFONO_AGENCIA = "59170000000"; 
+
 // BASE DE DATOS DE PAQUETES TURÍSTICOS
 const paquetes = [
     {
@@ -160,7 +161,7 @@ formReserva.addEventListener("submit", function(e) {
     const personas = inputPersonas.value;
     const total = paqueteActual.precio * personas;
 
-    const mensaje = `Hola *Tours Lucachi*, quiero confirmar una reserva:%0A%0A` +
+    const mensaje = `Hola *Explora Mundo*, quiero confirmar una reserva:%0A%0A` +
                     `*Paquete:* ${paqueteActual.titulo}%0A` +
                     `*Cliente:* ${nombre}%0A` +
                     `*Fecha elegida:* ${fecha}%0A` +
@@ -168,7 +169,7 @@ formReserva.addEventListener("submit", function(e) {
                     `*Total estimado:* $${total} USD%0A%0A` +
                     `¿Me confirman disponibilidad por favor?`;
 
-    const urlWhatsApp = `https://wa.me/59176984810?text=${mensaje}`;
+    const urlWhatsApp = `https://wa.me/59169542196?text=${mensaje}`;
     window.open(urlWhatsApp, "_blank");
     modal.style.display = "none";
 });
